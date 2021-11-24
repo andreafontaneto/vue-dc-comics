@@ -23,7 +23,57 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data(){
+    return{
+      menuLinks: [
+
+        {
+          url: '/characters',
+          text: 'Characters',
+          current: false
+        },
+        {
+          url: '/comics',
+          text: 'Comics',
+          current: true
+        },{
+          url: '/movies',
+          text: 'Movies',
+          current: false
+        },{
+          url: '/tv',
+          text: 'Tv',
+          current: false
+        },{
+          url: '/games',
+          text: 'Games',
+          current: false
+        },{
+          url: '/collectibles',
+          text: 'Collectibles',
+          current: false
+        },{
+          url: '/videos',
+          text: 'Videos',
+          current: false
+        },{
+          url: '/fans',
+          text: 'Fans',
+          current: false
+        },{
+          url: '/news',
+          text: 'News',
+          current: false
+        },{
+          url: '/shop',
+          text: 'Shop',
+          current: false
+        }
+
+      ]
+    }
+  }
 }
 </script>
 
