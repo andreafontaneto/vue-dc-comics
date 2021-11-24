@@ -6,16 +6,9 @@
     </div>
 
     <ul>
-      <li><a href="#">Characters</a></li>
-      <li><a href="#">Comics</a></li>
-      <li><a href="#">Movies</a></li>
-      <li><a href="#">Tv</a></li>
-      <li><a href="#">Games</a></li>
-      <li><a href="#">Collectibles</a></li>
-      <li><a href="#">Videos</a></li>
-      <li><a href="#">Fans</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Shop</a></li>
+      <li v-for="(link, index) in menuLinks" :key="index">
+        <a :class="{active: link.current === true}" href="link.url">{{link.text}}</a>
+      </li>
     </ul>
 
   </header>
@@ -104,6 +97,10 @@ export default {
     font-weight: 700;
     color: grey;
     padding: 36px 12px;
+  }
+
+  a.active{
+    border-bottom: 5px solid #176DF3;
   }
 
   a:hover{
