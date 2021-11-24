@@ -7,7 +7,7 @@
 
     <ul>
       <li v-for="(link, index) in menuLinks" :key="index">
-        <a :class="{active: link.current === true}" href="link.url">{{link.text}}</a>
+        <a :class="{active: link.current === true}" :href="link.url">{{link.text}}</a>
       </li>
     </ul>
 
