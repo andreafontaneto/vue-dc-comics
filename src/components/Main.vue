@@ -1,5 +1,9 @@
 <template>
-  <main>MAIN</main>
+  <main>
+    <div class="container">
+      CONTENT GOES HERE
+    </div>
+  </main>
 </template>
 
 <script>
@@ -9,5 +13,12 @@ export default {
 </script>
 
 <style>
+
+  main {
+    background-color: #151515;
+    color: white;
+    font-size: 30px;
+    padding: 30px 0;
+  }
 
 </style>
