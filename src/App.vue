@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Main />
+    <BannerInfo />
     <Footer />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import Header from "./components/Header.vue"
 import Main from "./components/Main.vue"
+import BannerInfo from "./components/Banner-info.vue"
 import Footer from "./components/Footer.vue"
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     Header,
     Main,
+    BannerInfo,
     Footer
   }
 }

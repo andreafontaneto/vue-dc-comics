@@ -140,6 +140,7 @@ export default {
           color: white;
           font-size: 15px;
           padding: 15px;
+          cursor: pointer;
         }
 
         .social{
@@ -155,6 +156,7 @@ export default {
 
           img{
              margin: 0 10px;
+             cursor: pointer;
           }
         }
       }  
