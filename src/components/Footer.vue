@@ -52,19 +52,32 @@
         </div>
       
         </div>
-        <div class="logo-big">
+        <!-- <div class="logo-big">
           <img src="../assets/img/dc-logo-bg.png" alt="logo-bg">
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-
-      </div>
-      
-
-      
+        </div> -->
+      </div>   
 
     </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <div class="footer-bottom-content">
+          <button class="btn">SIGN UP NOW!</button>
+
+          <div class="social">
+            <h2>FOLLOW US</h2>
+            <img src="../assets/img/footer-facebook.png" alt="f-fb">
+            <img src="../assets/img/footer-twitter.png" alt="f-tw">
+            <img src="../assets/img/footer-youtube.png" alt="f-yt">
+            <img src="../assets/img/footer-pinterest.png" alt="f-pt">
+            <img src="../assets/img/footer-periscope.png" alt="f-ps">
+          </div>
+        </div>
+        
+      </div>
+    </div>   
+
   </footer>
 </template>
 
@@ -83,11 +96,12 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px 0 40px 0;
-    overflow: hidden;
   }
 
   .footer-top{
     display: flex;
+    overflow: hidden;
+    margin-bottom: 50px;
   }
 
   .footer-list{
@@ -111,14 +125,43 @@ export default {
     font-size: 12px;
   }
 
-  .logo-big{
+  /* .logo-big{
     width: 510px;
+    margin-left: auto;
+  } */
+
+  .footer-bottom{
+    width: 100%;
+    background-color: #242424;
+    padding: 30px 0;
+  }
+
+  .footer-bottom-content{
+    display: flex;
+  }
+
+  .btn{
+    background-color: #242424;
+    border: 3px solid #176DF3;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .social{
+    display: flex;
+    align-items: center;
     margin-left: auto;
   }
 
-  img{
-    position: relative;
-    bottom: 100px;
+  h2{
+    font-size: 18px;
+    color: #176DF3;
+    margin-right: 30px;
+  }
+
+  .social img{
+    margin: 0 10px;
   }
 
 </style>
