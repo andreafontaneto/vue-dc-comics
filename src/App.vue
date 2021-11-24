@@ -21,27 +21,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body{
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .container{
-    width: 1170px;
-    margin: 0 auto;
-  }
-
-  img{
-    max-width: 100%;
-  }
+  @import "./assets/style/vars.scss";
+  @import "./assets/style/generals.scss";
+  @import "./assets/style/utilities.scss";
 
 </style>

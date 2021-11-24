@@ -87,7 +87,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+  @import "../assets/style/vars.scss";
 
   footer{
     height: 350px;
@@ -96,72 +98,72 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px 0 40px 0;
-  }
 
-  .footer-top{
-    display: flex;
-    overflow: hidden;
-    margin-bottom: 50px;
-  }
+    .footer-top{
+      display: flex;
+      overflow: hidden;
+      margin-bottom: 50px;
 
-  .footer-list{
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-  }
+      .footer-list{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
 
-  h3{
-    color: white;
-    padding: 15px 0;
-  }
+        h3{
+          color: white;
+          padding: 15px 0;
+        }
 
-  ul{
-    list-style: none;
-  }
+        ul{
+          list-style: none;
 
-  li a{
-    text-decoration: none;
-    color: #747474;
-    font-size: 12px;
+          li a{
+            text-decoration: none;
+            color: #747474;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .footer-bottom{
+      width: 100%;
+      background-color: $dark-grey-color;
+      padding: 30px 0;
+
+      .footer-bottom-content{
+        display: flex;
+
+        .btn{
+          background-color: $dark-grey-color;
+          border: 3px solid $blue-color;
+          color: white;
+          font-size: 15px;
+          padding: 15px;
+        }
+
+        .social{
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+
+          h2{
+            font-size: 18px;
+            color: $blue-color;
+            margin-right: 30px;
+          }
+
+          img{
+             margin: 0 10px;
+          }
+        }
+      }  
+    }
   }
 
   /* .logo-big{
     width: 510px;
     margin-left: auto;
   } */
-
-  .footer-bottom{
-    width: 100%;
-    background-color: #242424;
-    padding: 30px 0;
-  }
-
-  .footer-bottom-content{
-    display: flex;
-  }
-
-  .btn{
-    background-color: #242424;
-    border: 3px solid #176DF3;
-    color: white;
-    font-size: 15px;
-    padding: 15px;
-  }
-
-  .social{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-
-  h2{
-    font-size: 18px;
-    color: #176DF3;
-    margin-right: 30px;
-  }
-
-  .social img{
-    margin: 0 10px;
-  }
 
 </style>

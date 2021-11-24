@@ -70,42 +70,42 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+
+  @import "../assets/style/vars.scss";
 
   header{
     height: 100px;
     background-color: white;
     display: flex;
     align-items: center;
-  }
 
-  .logo{
-    width: 80px;
-    height: 80px;
-  }
+    .logo{
+      width: 80px;
+      height: 80px;
+    }
 
-  ul{
-    list-style: none;
-    display: flex;
-    margin-left: auto;
-  }
+    ul{
+      list-style: none;
+      display: flex;
+      margin-left: auto;
 
-  a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    color: grey;
-    padding: 36px 12px;
-  }
+      a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        color: grey;
+        padding: 36px 12px;
 
-  a.active{
-    border-bottom: 5px solid #176DF3;
-  }
+        &.active,
+        &:hover{
+          color: $blue-color;
+          border-bottom: 5px solid $blue-color;
+        }
+      }
 
-  a:hover{
-    color: #176DF3;
-    border-bottom: 5px solid #176DF3;
-  }
+    }
+  } 
 
 </style>
