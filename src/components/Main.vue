@@ -93,6 +93,11 @@
 
       </div>
 
+      <div class="load">
+        <button class="load-btn">LOAD MORE</button>
+      </div>
+
+
 
     </div>
   
@@ -143,17 +148,34 @@ export default {
           width: 100%;
           height: 180px;
           overflow: hidden;
+          cursor: pointer;
         }
 
         .card-title p{
           font-size: 14px;
           color: grey;
           margin: 10px 0;
+          cursor: pointer;
         }
         
       }
     }
 
+    .load{
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+
+      .load-btn{
+        background-color: $blue-color;
+        color: white;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 10px 50px;
+        border: none;
+        cursor: pointer;    
+      }
+    }
     
   }
 
