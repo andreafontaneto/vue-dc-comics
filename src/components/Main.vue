@@ -20,6 +20,8 @@
         :series="card.series"
         /> -->
 
+        <!-- :card è il props // "card" è l'oggetto dentro cardData -->
+        <!-- CardBox contiene un props che è :card // è un oggetto? sì ed è l'oggetto "card" dell'array cardData -->
         <CardBox
         v-for="(card, index) in cardData"
         :key ="index"
