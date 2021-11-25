@@ -13,11 +13,17 @@
 
       <div class="cards-box">
         
-        <CardBox
+        <!-- <CardBox
         v-for="(card, index) in cardsList"
         :key ="index"
         :thumb="card.thumb"
         :series="card.series"
+        /> -->
+
+        <CardBox
+        v-for="(card, index) in cardsList"
+        :key ="index"
+        :card="card"
         />
 
       </div>

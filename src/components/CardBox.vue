@@ -1,6 +1,6 @@
 <template>
-  
-  <div class="card">
+
+  <!-- <div class="card">
           
     <div class="card-img">
       <img :src="thumb" :alt="series">
@@ -8,6 +8,18 @@
 
     <div class="card-title">
       <p>{{series}}</p>
+    </div>
+          
+  </div> -->
+  
+  <div class="card">
+          
+    <div class="card-img">
+      <img :src="card.thumb" :alt="card.series">
+    </div>
+
+    <div class="card-title">
+      <p>{{card.series}}</p>
     </div>
           
   </div>
@@ -19,10 +31,11 @@ export default {
   name: 'CardBox',
 
   props:{
-    thumb: String,
-    price: String,
-    series: String,
-    type: String
+    card: Object
+    // thumb: String,
+    // price: String,
+    // series: String,
+    // type: String
   }
 
 }
