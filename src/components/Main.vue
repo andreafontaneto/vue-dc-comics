@@ -126,14 +126,16 @@ export default {
     }
 
     .current-series{
-      width: 220px;
-      padding: 20px;
-      font-size: 25px;
+      width: 250px;
+      padding: 15px 20px;
+      font-size: 30px;
       color: white;
       background-color: $blue-color;
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      bottom: 30px;
     }
 
     .cards-box{
