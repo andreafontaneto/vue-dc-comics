@@ -13,83 +13,12 @@
 
       <div class="cards-box">
         
-        <div v-for="(card, index) in cardsList" :key ="index" class="card">
-          
-          <div class="card-img">
-            <img :src="card.thumb" :alt="card.series">
-          </div>
-
-          <div class="card-title">
-            <p>{{card.series}}</p>
-          </div>
-          
-        </div>
-        <!-- <div class="card">
-          
-          <div class="card-img">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="x">
-          </div>
-
-          <div class="card-title">
-            <p>NOME CARD</p>
-          </div>
-          
-        </div>
-        <div class="card">
-          
-          <div class="card-img">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="x">
-          </div>
-
-          <div class="card-title">
-            <p>NOME CARD</p>
-          </div>
-          
-        </div>
-        <div class="card">
-          
-          <div class="card-img">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="x">
-          </div>
-
-          <div class="card-title">
-            <p>NOME CARD</p>
-          </div>
-          
-        </div>
-        <div class="card">
-          
-          <div class="card-img">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="x">
-          </div>
-
-          <div class="card-title">
-            <p>NOME CARD</p>
-          </div>
-          
-        </div>
-        <div class="card">
-          
-          <div class="card-img">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="x">
-          </div>
-
-          <div class="card-title">
-            <p>NOME CARD</p>
-          </div>
-          
-        </div>
-        <div class="card">
-          
-          <div class="card-img">
-            <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="x">
-          </div>
-
-          <div class="card-title">
-            <p>NOME CARD</p>
-          </div>
-          
-        </div> -->
+        <CardBox
+        v-for="(card, index) in cardsList"
+        :key ="index"
+        :thumb="card.thumb"
+        :series="card.series"
+        />
 
       </div>
 
@@ -105,8 +34,15 @@
 </template>
 
 <script>
+
+import CardBox from './CardBox';
+
 export default {
   name: 'Main',
+
+  components:{
+    CardBox
+  },
 
   data(){
     return{
@@ -222,27 +158,6 @@ export default {
     .cards-box{
       display: flex;
       flex-wrap: wrap;
-
-      .card{
-        width: calc((100% / 6) - 30px);
-        margin: 15px;
-
-        .card-img{
-          width: 100%;
-          height: 180px;
-          overflow: hidden;
-          cursor: pointer;
-        }
-
-        .card-title p{
-          font-size: 14px;
-          color: white;
-          text-transform: uppercase;
-          margin: 15px 0;
-          cursor: pointer;
-        }
-        
-      }
     }
 
     .load{
